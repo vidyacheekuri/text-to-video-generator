@@ -9,9 +9,10 @@
 A short video created from the prompt "A cat astronaut exploring a candy planet."
 
 * [View the full story text that was generated](generated_text.txt)
-* [See all generated images for this run](demo_assets/)
-* [Listen to all generated audio clips](demo_assets/)
-* [See all intermediate video clips](demo_assets/)
+* [See a demo of generated images for this run](demo_assets/)
+* [Listen to to a demo of generated audio clips](demo_assets/)
+* [See a demo of intermediate video clips](demo_assets/)
+* [Final Generated Video](demo_assets/final_video.mp4)
 
 
 ## Key Features 
@@ -22,7 +23,7 @@ A short video created from the prompt "A cat astronaut exploring a candy planet.
 
 ---
 
-## ⚙️ How It Works
+## How It Works
 
 The project is split into two main scripts that create an automated content pipeline:
 
@@ -34,7 +35,7 @@ The project is split into two main scripts that create an automated content pipe
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 To run this project locally, you will need to follow these setup steps.
 
@@ -42,14 +43,14 @@ To run this project locally, you will need to follow these setup steps.
 
 * Python 3.9+
 * Git
-* An active OpenAI API account with billing set up.
+* An active OpenAI API account
 
 ### Installation Steps
 
 1.  **Clone the Repository**
     ```bash
-    git clone [https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git](https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git)
-    cd YOUR_REPOSITORY
+    git clone [https://github.com/vidyacheekuri/text-to-video-generator.git](https://github.com/vidyacheekuri/text-to-video-generator.git)
+    cd text-to-video-generator
     ```
 
 2.  **Install External Dependencies**
@@ -59,36 +60,19 @@ To run this project locally, you will need to follow these setup steps.
         * [Download FFmpeg](https://ffmpeg.org/download.html)
     * **ImageMagick**: A software suite for image manipulation.
         * [Download ImageMagick](https://imagemagick.org/script/download.php#windows)
-        * **Important**: During installation, you **must** check the boxes for **"Add application directory to your system path (PATH)"** and **"Install legacy utilities (e.g., convert)"**.
 
-3.  **Set Up Python Environment**
-    It is highly recommended to use a virtual environment to manage project dependencies.
-
-    ```bash
-    # Create and activate a virtual environment
-    python -m venv venv
-    # On Windows:
-    venv\Scripts\activate
-    # On macOS/Linux:
-    source venv/bin/activate
-
-    # Install the required Python libraries
-    pip install -r requirements.txt
-    ```
-
-4.  **Add Your OpenAI API Key**
+3.  **Add Your OpenAI API Key**
     1.  Create a file named `api_key.py` in the root directory.
     2.  Add your OpenAI API key to this file:
         ```python
         API_KEY = "sk-YourSecretKeyGoesHere"
         ```
-    *(Note: `api_key.py` is included in the `.gitignore` file to prevent you from accidentally committing your secret key.)*
 
 ---
 
-## 🏃‍♀️ Usage
+## Usage
 
-Run the scripts from the root `CAPSTONE` directory.
+Run the scripts from the root `GenAI` directory.
 
 1.  **Generate the Story**:
     Run the text generator and enter a topic when prompted.
@@ -107,7 +91,7 @@ Run the scripts from the root `CAPSTONE` directory.
 
 ---
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 * **Python**
 * **OpenAI API**
@@ -120,6 +104,3 @@ Run the scripts from the root `CAPSTONE` directory.
 
 ---
 
-## 📜 License
-
-This project is distributed under the MIT License. See the `LICENSE` file for more information.
