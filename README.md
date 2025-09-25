@@ -27,27 +27,27 @@ A short video created from the prompt "A cat astronaut exploring a candy planet.
 
 The project is split into two main scripts that create an automated content pipeline:
 
-1.  **Text Generation (`text_generator.py`)**: The user provides a topic. [cite_start]This script uses a **Large Language Model (LLM)** to write a short story and saves it to `generated_text.txt`[cite: 75, 814].
+1.  **Text Generation (`text_generator.py`)**: The user provides a topic. This script uses a **Large Language Model (LLM)** to write a short story and saves it to `generated_text.txt`.
 2.  **Video Generation (`video_generator.py`)**:
-    * [cite_start]Reads the generated story and splits it into individual sentences[cite: 100].
-    * [cite_start]For each sentence, it uses a **Generative Adversarial Network (GAN)** to create a corresponding image and a **Text-to-Speech (TTS)** model for the audio narration[cite: 104, 105].
-    * [cite_start]It uses `moviepy` to combine the image, audio, and a text overlay into a video clip for that sentence[cite: 109].
-    * [cite_start]Finally, it concatenates all the individual clips into the final `final_video.mp4`[cite: 111].
+    * Reads the generated story and splits it into individual sentences.
+    * For each sentence, it uses a **Generative Adversarial Network (GAN)** to create a corresponding image and a **Text-to-Speech (TTS)** model for the audio narration.
+    * It uses `moviepy` to combine the image, audio, and a text overlay into a video clip for that sentence.
+    * Finally, it concatenates all the individual clips into the final `final_video.mp4`.
 
 ---
 ## Core AI Methodology
 
-[cite_start]This project's innovation comes from its unique integration of Transformer and GAN models to improve the quality of the final video output[cite: 40, 569].
+This project's innovation comes from its unique integration of Transformer and GAN models to improve the quality of the final video output.
 
 ### 1. Story Generation (Transformer LLM)
-[cite_start]To generate a coherent and detailed story, the system utilizes the **decoder block of a Transformer architecture**[cite: 46, 571, 121]. [cite_start]The user's initial prompt is converted into vector embeddings, which are processed through multiple layers of **multi-head self-attention**[cite: 168, 638]. [cite_start]This allows the model to understand the context and relationships between words, generating a rich narrative that serves as a high-quality input for the next stage[cite: 41, 571].
+To generate a coherent and detailed story, the system utilizes the **decoder block of a Transformer architecture**. The user's initial prompt is converted into vector embeddings, which are processed through multiple layers of **multi-head self-attention**. This allows the model to understand the context and relationships between words, generating a rich narrative that serves as a high-quality input for the next stage.
 
 ### 2. Image Generation (GAN)
-[cite_start]The generated story is segmented, and each sentence is fed into a **Generative Adversarial Network (GAN)** for image synthesis[cite: 245, 533]. The GAN consists of two competing neural networks:
-* [cite_start]A **Generator** creates images based on text embeddings from the story.
-* [cite_start]A **Discriminator** evaluates these images against real-world data, providing feedback that iteratively trains the generator to produce more accurate and realistic visuals.
+The generated story is segmented, and each sentence is fed into a **Generative Adversarial Network (GAN)** for image synthesis. The GAN consists of two competing neural networks:
+* A **Generator** creates images based on text embeddings from the story.
+* A **Discriminator** evaluates these images against real-world data, providing feedback that iteratively trains the generator to produce more accurate and realistic visuals.
 
-[cite_start]This two-part approach ensures that the generated story is detailed and that the resulting images are of high quality and contextually relevant.
+This two-part approach ensures that the generated story is detailed and that the resulting images are of high quality and contextually relevant.
 
 
 ---
