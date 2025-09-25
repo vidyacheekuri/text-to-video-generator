@@ -9,9 +9,9 @@
 A short video created from the prompt "A cat astronaut exploring a candy planet."
 
 * [View the full story text that was generated](generated_text.txt)
-* [See all generated images for this run](images/)
-* [Listen to all generated audio clips](audio/)
-* [See all intermediate video clips](videos/)
+* [See all generated images for this run](demo_assets/)
+* [Listen to all generated audio clips](demo_assets/)
+* [See all intermediate video clips](demo_assets/)
 
 
 ## Key Features 
