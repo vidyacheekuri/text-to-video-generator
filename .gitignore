@@ -1,0 +1,12 @@
+# Ignore the secret API key
+api_key.py
+
+# Ignore Python's cache folder
+__pycache__/
+
+# Ignore generated media files and folders
+images/
+audio/
+videos/
+final_video.mp4
+generated_text.txt
