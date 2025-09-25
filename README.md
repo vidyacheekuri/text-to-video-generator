@@ -8,8 +8,11 @@
 
 A short video created from the prompt "A cat astronaut exploring a candy planet."
 
+* [View the full story text that was generated](generated_text.txt)
+* [See all generated images for this run](images/)
+* [Listen to all generated audio clips](audio/)
+* [See all intermediate video clips](videos/)
 
----
 
 ## Key Features 
 * **Automated Story Generation**: Expands a simple user prompt into a multi-sentence story using GPT-4o.
@@ -19,7 +22,7 @@ A short video created from the prompt "A cat astronaut exploring a candy planet.
 
 ---
 
-## How It Works
+## ⚙️ How It Works
 
 The project is split into two main scripts that create an automated content pipeline:
 
@@ -31,7 +34,7 @@ The project is split into two main scripts that create an automated content pipe
 
 ---
 
-## Getting Started
+## 🚀 Getting Started
 
 To run this project locally, you will need to follow these setup steps.
 
@@ -83,7 +86,7 @@ To run this project locally, you will need to follow these setup steps.
 
 ---
 
-## Usage
+## 🏃‍♀️ Usage
 
 Run the scripts from the root `CAPSTONE` directory.
 
@@ -104,7 +107,7 @@ Run the scripts from the root `CAPSTONE` directory.
 
 ---
 
-## Technologies Used
+## 🛠️ Technologies Used
 
 * **Python**
 * **OpenAI API**
@@ -117,6 +120,6 @@ Run the scripts from the root `CAPSTONE` directory.
 
 ---
 
-## License
+## 📜 License
 
 This project is distributed under the MIT License. See the `LICENSE` file for more information.
