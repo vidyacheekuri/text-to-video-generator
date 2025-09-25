@@ -16,7 +16,7 @@ def main():
 
         # 2. Read the text file
         # The script now looks for the text file inside the GenAI folder
-        input_filename = "GenAI/generated_text.txt" 
+        input_filename = "generated_text.txt" 
         with open(input_filename, "r", encoding="utf-8") as file:
             text = file.read()
 
@@ -83,7 +83,7 @@ def main():
         final_clips = [VideoFileClip(vf) for vf in video_files]
         
         final_video = concatenate_videoclips(final_clips, method="compose")
-        final_video.write_videofile("GenAI/final_video.mp4", fps=24, codec="libx264")
+        final_video.write_videofile("final_video.mp4", fps=24, codec="libx264")
         print("\nSuccess! The final video has been saved to 'final_video.mp4'")
 
     except FileNotFoundError:

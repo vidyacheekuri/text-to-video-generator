@@ -35,7 +35,7 @@ def main():
         generated_text = response.choices[0].message.content
 
         # 5. Save the text to a file
-        output_filename = "GenAI/generated_text.txt"
+        output_filename = "generated_text.txt"
         with open(output_filename, "w", encoding="utf-8") as file:
             file.write(generated_text.strip())
 
